@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+  mongo-db1:
+    image: mongo:5
+    container_name: traning-mongo
+    ports:
+      - 27017:27017
+    networks:
+      default:
+        aliases:
+          - traning-mongo
