@@ -3,3 +3,9 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017/?directConnection=true
       database: security-training
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG

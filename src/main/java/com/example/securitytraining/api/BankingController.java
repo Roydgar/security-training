@@ -15,4 +15,9 @@ public class BankingController {
     public String account() {
         return "Your account";
     }
+
+    @GetMapping("/admin-panel")
+    public String adminPanel() {
+        return "Your admin panel";
+    }
 }

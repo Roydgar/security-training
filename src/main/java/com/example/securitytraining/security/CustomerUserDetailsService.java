@@ -3,7 +3,6 @@ package com.example.securitytraining.security;
 import com.example.securitytraining.model.entity.Customer;
 import com.example.securitytraining.service.CustomerService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.annotation.Profile;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -14,7 +13,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-@Profile("customUserDetailsService")
 @RequiredArgsConstructor
 public class CustomerUserDetailsService implements UserDetailsService {
 
