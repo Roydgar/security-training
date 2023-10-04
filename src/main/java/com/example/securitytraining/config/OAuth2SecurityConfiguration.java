@@ -23,6 +23,15 @@ public class OAuth2SecurityConfiguration {
                 .build();
     }
 
+    // or in application.yaml:
+    // spring:
+    //  security:
+    //    oauth2:
+    //      client:
+    //        registration:
+    //          github:
+    //            clientId: github-client-id
+    //            clientSecret: github-client-secret
     @Bean
     public ClientRegistrationRepository clientRegistrationRepository() {
         var oAuthProvider = CommonOAuth2Provider.GITHUB.getBuilder("github")
